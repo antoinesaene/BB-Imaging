@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "3c9a1341-5a31-499c-8557-227d71c0de20",
+		"name": "BB Imaging - TestAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Study",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://l5x9rjzp1e.execute-api.us-east-2.amazonaws.com/Dev/study/1",
+					"protocol": "https",
+					"host": [
+						"l5x9rjzp1e",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Dev",
+						"study",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Frame",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nxbz62j97k.execute-api.us-east-2.amazonaws.com/testing/frame/2",
+					"protocol": "https",
+					"host": [
+						"nxbz62j97k",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"frame",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put Annotation",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"frameid\": \"1\",\n  \"annotationTemplate\": \"fetal-humurus\",\n  \"toolType\": \"ruler\",\n  \"coordinates\":\n  {\n    \"x1\": 1,\n    \"x2\": 2,\n    \"y1\": 3,\n    \"y2\": 4\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cso7g6zedl.execute-api.us-east-2.amazonaws.com/dev/annotation",
+					"protocol": "https",
+					"host": [
+						"cso7g6zedl",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"annotation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
