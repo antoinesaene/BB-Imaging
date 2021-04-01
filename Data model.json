@@ -1,0 +1,27 @@
+study
+{
+  "studyid": "1234",
+  "patientid": "patient123",
+  "date": "2021-03-30"
+}
+
+frame
+{
+  "frameid": "1",
+  "studyid": "1234",
+  "source": "url",
+  "annotations":
+  [
+    {
+      "annotationTemplate": "fetal-humurus",
+      "toolType": "ruler",
+      "coordinates":
+      {
+        "x1": 33,
+        "x2": 230,
+        "y1": 371,
+        "y2": 528
+      }
+    }
+  ]
+}
